@@ -1,0 +1,13 @@
+package com.smartprocess.smcrud;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SmcrudApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
