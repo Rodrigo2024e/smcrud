@@ -5,12 +5,18 @@ import java.util.Objects;
 
 import com.smartprocess.smcrud.entities.Client;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 public class ClientDTO {
 	
 	private Long id;
+	
+	@NotBlank(message = "Nome não pode ser vazio")
 	private String name;
 	private String cpf;
 	private double income;
+	@PastOrPresent(message = "Data de nascimento não pode ser data futura")
 	private LocalDate birthDate;
 	private Integer children;
 
